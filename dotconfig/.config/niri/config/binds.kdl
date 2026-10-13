@@ -309,8 +309,8 @@ binds {
     Mod+Return repeat=false hotkey-overlay-title="Open a Terminal" {
         spawn "kitty"
     }
-    Mod+E repeat=false hotkey-overlay-title="Open File Manager" {
-        spawn "thunar"
+    Mod+E repeat=false hotkey-overlay-title="Open Yazi File Manager" {
+        spawn "kitty" "yazi"
     }
     Mod+B repeat=false hotkey-overlay-title="Open Browser" {
         spawn "brave-origin"
