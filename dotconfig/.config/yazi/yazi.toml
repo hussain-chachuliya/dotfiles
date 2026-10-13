@@ -1,0 +1,8 @@
+# Enter/o on a directory should do nothing (default folder rule runs `edit`
+# first, which opens $EDITOR on the directory). `l` / `->` still enters it.
+[[opener.noop]]
+run = "true"
+
+[[open.prepend_rules]]
+mime = "folder/*"
+use = "noop"
