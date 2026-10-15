@@ -1,0 +1,21 @@
+dotconfig/.config/yazi/init.lua
+  s_8397a38a1c196c::t_516b25b34b4bf4 26-29
+dotconfig/.config/yazi/keymap.toml
+  s_8397a38a1c196c::t_dbbabf1edfbd60 97-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "24336cedaff651b755f0c40cbe432799c7552c89",
+  "prompts": {},
+  "sessions": {
+    "s_8397a38a1c196c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a13fbe-a2b8-769a-a71c-fdec1cdbbb9a",
+        "model": "muse-spark-1.3-contributor-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
