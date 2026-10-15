@@ -1,0 +1,94 @@
+dotconfig/.config/yazi/plugins/yamb.yazi/main.lua
+  s_f2284a18acd197::t_351496c9462c3d 1-372
+dotconfig/.config/yazi/scripts/hash.sh
+  s_f2284a18acd197::t_35dfcefdb342a7 21-22,25,28
+  s_f2284a18acd197::t_6148fd0ccc3ebc 2,4-19,23-24
+  s_f2284a18acd197::t_b41093fc6612b0 1,3,20,26-27,29
+.agents/skills/yazi/SKILL.md
+  s_f2284a18acd197::t_c14093f03d5551 91-97
+  s_f2284a18acd197::t_b46ffb1feb5c4c 88-90
+  s_f2284a18acd197::t_0956f6044770f0 98-100
+dotconfig/.config/yazi/scripts/duplicate.sh
+  s_f2284a18acd197::t_35dfcefdb342a7 2,5-36,39
+  s_f2284a18acd197::t_57418f972cb1c6 1,3-4,37-38,40
+dotconfig/.config/yazi/plugins/compress.yazi/README.md
+  s_f2284a18acd197::t_351496c9462c3d 1-152
+dotconfig/.config/yazi/keymap.toml
+  s_f2284a18acd197::t_f67a5d3ad3268f 1,6-7,12,17,22,27,32,36-38,43,48,53,58,63,68,72-74,79,84,89,94
+  s_f2284a18acd197::t_1690aa3e673a5c 96-97
+  s_f2284a18acd197::t_34c85f2d0bc023 3-5,8-11,13-16,18-21,23-26,28-31,33-35,39-42,44-47,49-52,54-57,59-62,64-67,69-71,75-78,80-83,85-88,90,92-93,95
+  s_f2284a18acd197::t_577eb1d37802da 91
+.agents/skills/yazi-portable-scripts/SKILL.md
+  s_f2284a18acd197::t_97fd4bab86a796 1-47
+dotconfig/.config/yazi/scripts/properties.sh
+  s_f2284a18acd197::t_6148fd0ccc3ebc 2,4-21,29-34
+  s_f2284a18acd197::t_35dfcefdb342a7 23-28,37
+  s_f2284a18acd197::t_e12ff6e0097663 1,3,22,35-36,38
+dotconfig/.config/yazi/plugins/compress.yazi/LICENSE
+  s_f2284a18acd197::t_351496c9462c3d 1-21
+.agents/skills/yazi-lua-api/SKILL.md
+  s_f2284a18acd197::t_3675f659b551cc 1-60
+dotconfig/.config/yazi/plugins/mediainfo.yazi/main.lua
+  s_f2284a18acd197::t_4f1b95b7bbb9ae 1,4-40,42-61,64-72,74-82,84-91,94-98,101-113,115-212
+  s_f2284a18acd197::t_7a8549df752a01 73,83,99
+  s_f2284a18acd197::t_94d2a360127133 2
+  s_f2284a18acd197::t_d934c4be9fa72c 3,41,62-63,92-93,100,114,213-216
+dotconfig/.config/yazi/plugins/yamb.yazi/LICENSE
+  s_f2284a18acd197::t_351496c9462c3d 1-21
+dotconfig/.config/yazi/package.toml
+  s_f2284a18acd197::t_351496c9462c3d 2-9
+  s_f2284a18acd197::t_4f1b95b7bbb9ae 1,11-15
+  s_f2284a18acd197::t_3b8b89cc13031e 10,17
+dotconfig/.config/yazi/yazi.toml
+  s_f2284a18acd197::t_5ee2ac9e779ed3 1,3,9,11
+  s_f2284a18acd197::t_c5bbaa35a9af10 4-8,10
+dotconfig/.config/yazi/scripts/clipboard.sh
+  s_f2284a18acd197::t_6148fd0ccc3ebc 1-30
+.agents/skills/yazi-plugins/SKILL.md
+  s_f2284a18acd197::t_b418b2fda41260 1-43
+.agents/skills/yazi-keymap/SKILL.md
+  s_f2284a18acd197::t_50fd3256594f89 1-43
+dotconfig/.config/yazi/init.lua
+  s_f2284a18acd197::t_09e95fba2c1ee0 1-25
+dotconfig/.config/yazi/plugins/compress.yazi/main.lua
+  s_f2284a18acd197::t_351496c9462c3d 1-577
+dotconfig/.config/yazi/plugins/yamb.yazi/README.md
+  s_f2284a18acd197::t_351496c9462c3d 1-104
+dotconfig/.config/yazi/README.md
+  s_f2284a18acd197::t_dda648c9619be7 1-23,25-30,32-49
+  s_f2284a18acd197::t_4b503ac2b99409 24,31,50-51
+dotconfig/.config/yazi/plugins/mediainfo.yazi/LICENSE
+  s_f2284a18acd197::t_c1b3136d49e68e 1-20
+dotconfig/.config/yazi/plugins/mediainfo.yazi/README.md
+  s_f2284a18acd197::t_cf643685137888 1-223
+dotconfig/.config/yazi/plugins/mediainfo.yazi/adobe.lua
+  s_f2284a18acd197::t_7a096830be8a58 1-338
+dotconfig/.config/yazi/plugins/mediainfo.yazi/audio.lua
+  s_f2284a18acd197::t_582884f188ed51 1-381
+dotconfig/.config/yazi/plugins/mediainfo.yazi/const.lua
+  s_f2284a18acd197::t_7f29ba6b13c528 1-66
+dotconfig/.config/yazi/plugins/mediainfo.yazi/image.lua
+  s_f2284a18acd197::t_ed2c6ee4d6c239 1-290
+dotconfig/.config/yazi/plugins/mediainfo.yazi/none-media-preview.lua
+  s_f2284a18acd197::t_979e9385e29300 1-185
+dotconfig/.config/yazi/plugins/mediainfo.yazi/utils.lua
+  s_f2284a18acd197::t_cf0eaa7a6d566a 1-125
+dotconfig/.config/yazi/plugins/mediainfo.yazi/video.lua
+  s_f2284a18acd197::t_3a2384e389e819 1-277
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "2d15326bf55b77a8adcd997331b0105e3d8adfcb",
+  "prompts": {},
+  "sessions": {
+    "s_f2284a18acd197": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a13ef9-4e3a-75c8-b4a7-4325919f18f1",
+        "model": "muse-spark-1.3-contributor-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
