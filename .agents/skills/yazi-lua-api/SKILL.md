@@ -49,6 +49,60 @@ end
   delegate breaks preview for every file it matches.
 - Reference: `peterfication/mux.yazi` (full delegation pattern).
 
+## init.lua is not a plugin context
+
+- `ya.sync()` and `ui.render()` throw `must be called in a plugin` from
+  `init.lua` (including inside `Linemode:*` overrides) — never call them there.
+- `ya.async()` and `ya.emit()` DO work from `init.lua`.
+- To re-render after async work completes, emit `ya.emit("peek", {})`
+  instead of calling `ui.render()`.
+
+## Sync → async boundary
+
+- Render-scoped `File`/`Url` userdata is destructed by the time a `ya.async`
+  body runs (`userdata has been destructed`). Pass only plain strings across
+  the boundary (`local key = tostring(file.url)`), rebuild inside the task
+  (`Url(key)`).
+- Guard with a `pending` table so each key spawns at most one task; cache
+  results (per-session cache is the lazy default — note staleness in a
+  `ponytail:` comment).
+
+## Async recursive dir-size linemode (verified pattern)
+
+```lua
+local cache, pending = {}, {}
+function Linemode:size()
+  local size = self._file:size()
+  if size then return ya.readable_size(size) end
+  if not self._file.cha.is_dir then return "" end
+  local key = tostring(self._file.url) -- string only, userdata dies async
+  if cache[key] then return cache[key] end
+  if not pending[key] then
+    pending[key] = true
+    ya.async(function()
+      local ok, total = pcall(function()
+        local it = assert(fs.calc_size(Url(key)))
+        local sum = 0
+        while true do
+          local n = it:recv()
+          if not n then break end
+          sum = sum + n
+        end
+        return sum
+      end)
+      pending[key] = nil
+      cache[key] = ok and ya.readable_size(total) or "?"
+      ya.emit("peek", {}) -- re-render; ui.render() is unavailable here
+    end)
+  end
+  return "…" -- placeholder while measuring
+end
+```
+
+- Built-in `linemode = "size"` shows file sizes by default, but directory
+  sizes are only evaluated when `sort_by = "size"` — the override above is
+  what makes folder totals appear unconditionally.
+
 ## Verify before shipping
 
 - API renamed across versions — confirm against YOUR binary, not memory:
@@ -56,5 +110,11 @@ end
 - Syntax: `luajit -b plugin/main.lua /tmp/x.luac`
 - Docs are versioned (`yazi-rs.github.io/docs/...` has a version picker) —
   match them to `yazi --version`.
-- `ya.emit("peek", {})` forces a re-peek (use after toggles);
+- `ya.emit("peek", {})` forces a re-peek (use after toggles AND as the
+async-completion re-render from `init.lua`, where `ui.render()` is unavailable);
   `ya.notify { title=..., content=..., timeout=... }` for feedback.
+- Headless end-to-end test: drive yazi from Python `pty.fork()` with an
+explicit `TIOCSWINSZ` (yazi aborts without terminal dimensions), point
+`YAZI_CONFIG_HOME` at a sandbox dir, quit with `q` after N seconds.
+Trace execution via `io.open("/tmp/x.txt", "a")` file logging from Lua —
+the yazi.log location is unreliable across platforms.

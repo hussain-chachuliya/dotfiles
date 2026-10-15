@@ -1,5 +1,10 @@
 #:schema https://yazi-rs.github.io/schemas/yazi.json
 
+[mgr]
+# Show size by default in the middle pane (files + folders).
+# Folder totals come from the async Linemode:size() override in init.lua.
+linemode = "size"
+
 [plugin]
 # boydaihungst/mediainfo — stacked preview: thumbnail on top, mediainfo below.
 # Preloaders are optional but make the thumbnail appear instantly.

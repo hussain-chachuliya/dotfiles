@@ -4,6 +4,7 @@
 
 | Feature | Keybinding | Description |
 |---|---|---|
+| **Sizes by default** | _(linemode)_ | Middle pane shows file sizes and recursive folder totals (async via `fs.calc_size`, cached per session; `…` while measuring, `?` on error) |
 | **Bookmarks** | `u a` | Add current dir as bookmark |
 | | `u g` | Jump by key |
 | | `u G` | Jump by fzf |
