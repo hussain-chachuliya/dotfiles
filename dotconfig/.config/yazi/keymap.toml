@@ -95,3 +95,8 @@ desc = "Copy file contents to clipboard"
 on = ["e", "m"]
 run = "plugin mediainfo -- toggle-metadata"
 desc = "Toggle mediainfo metadata in preview"
+
+[[mgr.prepend_keymap]]
+on = "z"
+run = "plugin zoxide"
+desc = "Jump to a directory using zoxide"
