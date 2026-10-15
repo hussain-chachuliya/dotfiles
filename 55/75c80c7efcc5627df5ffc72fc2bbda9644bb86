@@ -1,0 +1,28 @@
+dotconfig/.config/yazi/README.md
+  s_f80b4737f5525e::t_cb4a98da954310 7
+dotconfig/.config/yazi/init.lua
+  s_f80b4737f5525e::t_bc8e666fa76670 30-33,38,41-50,52-57,61-65,67,70-71,74-77
+  s_f80b4737f5525e::t_3f6af7d25e372c 34-37,39-40,51,58-60,66,68-69,72-73
+.agents/skills/yazi-lua-api/SKILL.md
+  s_f80b4737f5525e::t_022ef2d2062cb6 113-114
+  s_f80b4737f5525e::t_03a2c4cbe73f44 52-105
+  s_f80b4737f5525e::t_882733c97f94d2 116-120
+dotconfig/.config/yazi/yazi.toml
+  s_f80b4737f5525e::t_6f6a5738c9e36b 3-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "5575c80c7efcc5627df5ffc72fc2bbda9644bb86",
+  "prompts": {},
+  "sessions": {
+    "s_f80b4737f5525e": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a13fc9-7942-769a-a71c-fdefb2e8d486",
+        "model": "muse-spark-1.3-contributor-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
