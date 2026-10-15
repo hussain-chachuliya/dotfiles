@@ -1,4 +1,97 @@
+# Bookmarks (yamb)
 [[mgr.prepend_keymap]]
-on = "!"
-run = 'shell "$SHELL" --block'
-desc = "Open shell here"
+on = ["u", "a"]
+run = "plugin yamb -- save"
+desc = "Add bookmark"
+
+[[mgr.prepend_keymap]]
+on = ["u", "g"]
+run = "plugin yamb -- jump_by_key"
+desc = "Jump bookmark by key"
+
+[[mgr.prepend_keymap]]
+on = ["u", "G"]
+run = "plugin yamb -- jump_by_fzf"
+desc = "Jump bookmark by fzf"
+
+[[mgr.prepend_keymap]]
+on = ["u", "d"]
+run = "plugin yamb -- delete_by_key"
+desc = "Delete bookmark by key"
+
+[[mgr.prepend_keymap]]
+on = ["u", "D"]
+run = "plugin yamb -- delete_by_fzf"
+desc = "Delete bookmark by fzf"
+
+[[mgr.prepend_keymap]]
+on = ["u", "r"]
+run = "plugin yamb -- rename_by_key"
+desc = "Rename bookmark by key"
+
+[[mgr.prepend_keymap]]
+on = ["u", "R"]
+run = "plugin yamb -- rename_by_fzf"
+desc = "Rename bookmark by fzf"
+
+# Compress (compress.yazi)
+[[mgr.prepend_keymap]]
+on = ["c", "a", "a"]
+run = "plugin compress"
+desc = "Archive selected files"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "z"]
+run = "plugin compress zip"
+desc = "Archive selected files (zip)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "t"]
+run = "plugin compress tar"
+desc = "Archive selected files (tar)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "g"]
+run = "plugin compress tar.gz"
+desc = "Archive selected files (tar.gz)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "x"]
+run = "plugin compress tar.xz"
+desc = "Archive selected files (tar.xz)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "p"]
+run = "plugin compress -p"
+desc = "Archive selected files (password)"
+
+[[mgr.prepend_keymap]]
+on = ["c", "a", "l"]
+run = "plugin compress -l"
+desc = "Archive selected files (compression level)"
+
+# Thunar "extra" chord
+[[mgr.prepend_keymap]]
+on = ["e", "p"]
+run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/properties.sh" %s'
+desc = "Properties dialog"
+
+[[mgr.prepend_keymap]]
+on = ["e", "d"]
+run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/duplicate.sh" %s'
+desc = "Duplicate selected files"
+
+[[mgr.prepend_keymap]]
+on = ["e", "h"]
+run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/hash.sh" %s'
+desc = "Show checksums (sha256 + md5)"
+
+[[mgr.prepend_keymap]]
+on = ["e", "c"]
+run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/clipboard.sh" %s'
+desc = "Copy file contents to clipboard"
+
+[[mgr.prepend_keymap]]
+on = ["e", "m"]
+run = "plugin mediainfo -- toggle-metadata"
+desc = "Toggle mediainfo metadata in preview"
