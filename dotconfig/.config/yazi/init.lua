@@ -23,3 +23,7 @@ require("yamb"):setup {
   jump_notify = true,
   cli = "fzf",
 }
+
+require("zoxide"):setup({
+  update_db = true,
+})
