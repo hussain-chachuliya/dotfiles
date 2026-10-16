@@ -1,9 +1,10 @@
 #:schema https://yazi-rs.github.io/schemas/yazi.json
 
 [mgr]
-# Show size by default in the middle pane (files + folders).
-# Folder totals come from the async Linemode:size() override in init.lua.
-linemode = "size"
+# Default view: size + mtime, newest first (same as `,M`).
+linemode = "size_mtime"
+sort_by = "mtime"
+sort_reverse = true
 
 [plugin]
 # boydaihungst/mediainfo — stacked preview: thumbnail on top, mediainfo below.

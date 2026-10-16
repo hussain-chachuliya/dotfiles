@@ -46,7 +46,7 @@ This directory `~/.config/yazi` holds the complete yazi setup:
 | `package.toml` | yazi plugin dependencies (e.g. `git`, `smart-enter`, `piper`)              |
 | `flavors/`     | Alternative UI flavors (e.g. `vscode-dark-modern`)                         |
 
-Edit any file and yazi will reload on next launch (no restart needed).
+Edit any file in the repo (verify with `realpath ~/.config/yazi/init.lua` — here it resolves into the dotfiles repo, so one edit covers both). `yazi.toml` hot-reloads; `init.lua` needs a yazi restart.
 
 ## Plugins
 
@@ -70,6 +70,9 @@ See the existing `package.toml` for examples (`git`, `smart-enter`, `piper`, `me
 ## Customisation
 
 - **Linemode** – `size_and_mtime` in `init.lua` shows permissions, size, date, and git branch. Re‑define or extend in `init.lua`.
+- **Date/time format** – keep one `fmt_time` helper in `init.lua` (`os.date("%d-%b-%Y %I:%M%p", t)`) and override `Linemode:mtime()` + `Linemode:btime()` so every time display matches.
+- **Combined default view** – define `Linemode:size_mtime()` as `Linemode.size(self)` plus `fmt_time(...)` (reuses the async dir-size logic); set `[mgr] linemode = "size_mtime"`, `sort_by = "mtime"`, `sort_reverse = true` for newest-first.
+- **Sort keys also switch linemode** – stock `,M` runs `sort mtime --reverse=yes` plus `linemode mtime`; overriding the default linemode does not change that. Rebind in `keymap.toml` if `,M` must keep the combined view.
 - **Keymap** – Add or re‑map keys in `keymap.toml`. Example: `on = "A"` creates a new directory.
 - **Theme** – Change `use = "vscode-dark-modern"` in `theme.toml` or craft your own flavor.
 - **Previewers** – Add/remove previewers in `yazi.toml` under `[plugin.prepend_previewers]`.
