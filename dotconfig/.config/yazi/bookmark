@@ -1,8 +1,15 @@
 Videos	/home/hussain/Videos/	v
+Videos	/Users/hussain.chachuliya/Videos/	v
+Pictures	/Users/hussain.chachuliya/Pictures/	p
 Pictures	/home/hussain/Pictures/	p
+Music	/Users/hussain.chachuliya/Music/	m
 Music	/home/hussain/Music/	m
+Home	/Users/hussain.chachuliya//	h
 Home	/home/hussain//	h
+Downloads	/Users/hussain.chachuliya/Downloads/	d
 Downloads	/home/hussain/Downloads/	d
 dotfiles	/home/hussain/dotfiles/	0
+Documents	/Users/hussain.chachuliya/Documents/	c
 Documents	/home/hussain/Documents/	c
 Desktop	/home/hussain/Desktop/	D
+Desktop	/Users/hussain.chachuliya/Desktop/	D

@@ -5,13 +5,6 @@
 | Feature | Keybinding | Description |
 |---|---|---|
 | **Sizes by default** | _(linemode)_ | Middle pane shows file sizes and recursive folder totals (async via `fs.calc_size`, cached per session; `…` while measuring, `?` on error) |
-| **Bookmarks** | `u a` | Add current dir as bookmark |
-| | `u g` | Jump by key |
-| | `u G` | Jump by fzf |
-| | `u d` | Delete bookmark by key |
-| | `u D` | Delete bookmark by fzf |
-| | `u r` | Rename bookmark by key |
-| | `u R` | Rename bookmark by fzf |
 | **Compress** | `c a a` | Archive selected files (zip) |
 | | `c a z` | Archive as zip |
 | | `c a t` | Archive as tar |
@@ -27,7 +20,6 @@
 
 ## Plugins installed
 
-- `h-hg/yamb` – bookmarks management (persistent, fuzzy search, jump by key/fzf)
 - `KKV9/compress` – archive files (zip, tar, 7z, etc.)
 - `boydaihungst/mediainfo` – stacked preview for `{audio,video,image}/*`: thumbnail on top, `mediainfo` metadata below
 
@@ -42,7 +34,7 @@
 
 - The entire configuration is in the dotfiles repo.
 - To restore: `git clone <repo> ~/.config/yazi` (or symlink as before).
-- To reinstall plugins: `ya pkg add h-hg/yamb KKV9/compress`
+- To reinstall plugins: `ya pkg add KKV9/compress`
 
 ## Notes
 
