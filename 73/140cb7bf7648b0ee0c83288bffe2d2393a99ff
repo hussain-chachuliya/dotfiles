@@ -1,0 +1,19 @@
+dotconfig/.config/yazi/yazi.toml
+  s_2b175e4e8b63d6::t_c832401fb51ff9 20,23-26,29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "73140cb7bf7648b0ee0c83288bffe2d2393a99ff",
+  "prompts": {},
+  "sessions": {
+    "s_2b175e4e8b63d6": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a14363-7be1-70a4-aca6-cfb949efd784",
+        "model": "cat-jam-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
