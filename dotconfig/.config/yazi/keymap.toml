@@ -37,22 +37,22 @@ desc = "Archive selected files (compression level)"
 # Thunar "extra" chord
 [[mgr.prepend_keymap]]
 on = ["e", "p"]
-run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/properties.sh" %s'
+run = 'shell --block -- "$HOME/.config/yazi/scripts/properties.sh" %s'
 desc = "Properties dialog"
 
 [[mgr.prepend_keymap]]
 on = ["e", "d"]
-run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/duplicate.sh" %s'
+run = 'shell --block -- "$HOME/.config/yazi/scripts/duplicate.sh" %s'
 desc = "Duplicate selected files"
 
 [[mgr.prepend_keymap]]
 on = ["e", "h"]
-run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/hash.sh" %s'
+run = 'shell --block -- "$HOME/.config/yazi/scripts/hash.sh" %s'
 desc = "Show checksums (sha256 + md5)"
 
 [[mgr.prepend_keymap]]
 on = ["e", "c"]
-run = 'shell --block -- "$YAZI_CONFIG_HOME/scripts/clipboard.sh" %s'
+run = 'shell --block -- "$HOME/.config/yazi/scripts/clipboard.sh" %s'
 desc = "Copy file contents to clipboard"
 
 [[mgr.prepend_keymap]]
@@ -61,12 +61,12 @@ run = "plugin mediainfo -- toggle-metadata"
 desc = "Toggle mediainfo metadata in preview"
 
 [[mgr.prepend_keymap]]
-on = "z"
+on = ["z"]
 run = "plugin zoxide"
 desc = "Jump to a directory using zoxide"
 
 [[mgr.prepend_keymap]]
-on = "Z"
+on = ["Z"]
 run = "plugin fzf"
 desc = "Jump to a file/directory via fzf"
 
