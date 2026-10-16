@@ -9,7 +9,10 @@ linemode = "size"
 # boydaihungst/mediainfo — stacked preview: thumbnail on top, mediainfo below.
 # Preloaders are optional but make the thumbnail appear instantly.
 prepend_preloaders = [{ mime = "{audio,video,image}/*", run = "mediainfo" }]
-prepend_previewers = [{ mime = "{audio,video,image}/*", run = "mediainfo" }]
+prepend_previewers = [
+  { mime = "{audio,video,image}/*", run = "mediainfo" },
+  { url = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+]
 
 [opener]
 edit = [
