@@ -1,7 +1,7 @@
 -- yazi init.lua
 
 require("zoxide"):setup({
-  update_db = true,
+	update_db = true,
 })
 
 -- Show recursive directory size in the middle pane (async, non-blocking).
@@ -16,38 +16,60 @@ require("zoxide"):setup({
 local dir_size_cache, dir_size_pending = {}, {}
 
 function Linemode:size()
-  local size = self._file:size()
-  if size then
-    return ya.readable_size(size)
-  end
-  local cha = self._file.cha
-  if not cha or not cha.is_dir then
-    return ""
-  end
-  local key = tostring(self._file.url)
-  if dir_size_cache[key] then
-    return dir_size_cache[key]
-  end
-  if not dir_size_pending[key] then
-    dir_size_pending[key] = true
-    ya.async(function()
-      local ok, total = pcall(function()
-        local it = assert(fs.calc_size(Url(key)))
-        local sum = 0
-        while true do
-          local n = it:recv()
-          if not n then
-            break
-          end
-          sum = sum + n
-        end
-        return sum
-      end)
-      dir_size_pending[key] = nil
-      -- ponytail: "?" on error (e.g. permission denied), no retry loop
-      dir_size_cache[key] = ok and ya.readable_size(total) or "?"
-      ya.emit("peek", {})
-    end)
-  end
-  return "…"
+	local size = self._file:size()
+	if size then
+		return ya.readable_size(size)
+	end
+	local cha = self._file.cha
+	if not cha or not cha.is_dir then
+		return ""
+	end
+	local key = tostring(self._file.url)
+	if dir_size_cache[key] then
+		return dir_size_cache[key]
+	end
+	if not dir_size_pending[key] then
+		dir_size_pending[key] = true
+		ya.async(function()
+			local ok, total = pcall(function()
+				local it = assert(fs.calc_size(Url(key)))
+				local sum = 0
+				while true do
+					local n = it:recv()
+					if not n then
+						break
+					end
+					sum = sum + n
+				end
+				return sum
+			end)
+			dir_size_pending[key] = nil
+			-- ponytail: "?" on error (e.g. permission denied), no retry loop
+			dir_size_cache[key] = ok and ya.readable_size(total) or "?"
+			ya.emit("peek", {})
+		end)
+	end
+	return "…"
+end
+
+-- Single date/time format used by every linemode: 16-Oct-2026 03:48PM.
+local function fmt_time(time)
+	time = math.floor(time or 0)
+	if time == 0 then
+		return ""
+	end
+	return os.date("%d-%b-%Y %I:%M%p", time)
+end
+
+function Linemode:mtime()
+	return fmt_time(self._file.cha.mtime)
+end
+
+function Linemode:btime()
+	return fmt_time(self._file.cha.btime)
+end
+
+-- Default view: size + mtime (reuses Linemode:size, so dir totals still work).
+function Linemode:size_mtime()
+	return string.format("%s  %s", Linemode.size(self), fmt_time(self._file.cha.mtime))
 end
