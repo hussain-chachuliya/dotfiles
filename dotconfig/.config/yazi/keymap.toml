@@ -100,3 +100,8 @@ desc = "Toggle mediainfo metadata in preview"
 on = "z"
 run = "plugin zoxide"
 desc = "Jump to a directory using zoxide"
+
+[[mgr.prepend_keymap]]
+on = "<Enter>"
+run = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
