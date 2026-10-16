@@ -1,0 +1,19 @@
+dotconfig/.config/yazi/README.md
+  s_fbf95d770ae38d::t_f0a9fe7477eeb9 37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "1ae3cd0b98adc2dee8801ca9d2d3aeef8fff376c",
+  "prompts": {},
+  "sessions": {
+    "s_fbf95d770ae38d": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a143aa-b380-70a4-aca6-cfbd509249f8",
+        "model": "cat-jam-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
