@@ -1,0 +1,21 @@
+dotconfig/.config/yazi/keymap.toml
+  s_8f985380af3e6c::t_98a039eba02d25 76
+  s_8f985380af3e6c::t_4143380626c8ae 40,45,50,55,64
+  s_8f985380af3e6c::t_3708fc008ac2b7 69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "bd786419bc549a1443d90e1e55284413c811ba7e",
+  "prompts": {},
+  "sessions": {
+    "s_8f985380af3e6c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a14464-bc91-771e-b7b5-374552300eed",
+        "model": "nemotron-3-super-120b-a12b:free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
