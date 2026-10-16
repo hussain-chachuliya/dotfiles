@@ -1,0 +1,21 @@
+dotconfig/.config/yazi/yazi.toml
+  s_67dfc4d2501592::t_01519a22b86659 4-7
+.agents/skills/yazi/SKILL.md
+  s_67dfc4d2501592::t_2dfccd6b8427cd 49,73-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "012cb050f78a7df4780366327eda7cf062dd7417",
+  "prompts": {},
+  "sessions": {
+    "s_67dfc4d2501592": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a14489-28f3-771e-b7b5-374684396f0f",
+        "model": "muse-spark-1.3-contributor-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
