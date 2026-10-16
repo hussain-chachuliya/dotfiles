@@ -1,0 +1,20 @@
+dotconfig/.config/yazi/keymap.toml
+  s_60749bedc66248::t_f2ea8529448bc6 69-72
+  s_60749bedc66248::t_44c85749ddc3dd 68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "02dee303c446f9923fb4e89450f8e5aad4150ce2",
+  "prompts": {},
+  "sessions": {
+    "s_60749bedc66248": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a143e4-5ae5-70a4-aca6-cfc64b1a21cb",
+        "model": "muse-spark-1.3-contributor-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
