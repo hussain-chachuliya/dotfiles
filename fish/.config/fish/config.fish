@@ -5,3 +5,6 @@ fish_add_path "/home/hussain/.pi/agent/bin"
 
 set -gx EDITOR helix
 set -gx GTK_USE_PORTAL 1
+
+# zoxide
+zoxide init fish | source
