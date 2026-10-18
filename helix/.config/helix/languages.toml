@@ -1,0 +1,1 @@
+use-grammars = { only = [ "lua", "python", "kotlin", "json", "toml", "ini", "kdl" ] }
