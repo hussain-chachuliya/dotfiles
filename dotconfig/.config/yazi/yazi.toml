@@ -12,12 +12,12 @@ sort_reverse = true
 prepend_preloaders = [{ mime = "{audio,video,image}/*", run = "mediainfo" }]
 prepend_previewers = [
   { mime = "{audio,video,image}/*", run = "mediainfo" },
-  { url = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+  { url = "*.md", run = 'piper -- bat --color=always --style=plain "$1"' },
 ]
 
 [opener]
 edit = [
-  { run = "${EDITOR:-vi} %s", desc = "$EDITOR", for = "unix", block = true },
+  { run = "$EDITOR %s", desc = "$EDITOR", for = "unix", block = true },
 ]
 play = [
   { run = "gio open %s1", desc = "Play", for = "linux" },
