@@ -26,3 +26,23 @@ render = true
 [editor.soft-wrap]
 enable = true
 max-wrap = 30
+
+[keys.normal]
+# Yank directly to system clipboard
+y = "yank_to_clipboard"
+Y = "yank_joined_to_clipboard"
+
+# Paste directly from system clipboard
+p = "paste_clipboard_after"
+P = "paste_clipboard_before"
+
+# Delete/Cut directly to system clipboard
+d = ["yank_to_clipboard", "delete_selection_noyank"]
+
+# Replace selection with system clipboard content
+R = "replace_selections_with_clipboard"
+
+[keys.select]
+# Mirror yank and delete in select mode
+y = "yank_to_clipboard"
+d = ["yank_to_clipboard", "delete_selection_noyank"]
