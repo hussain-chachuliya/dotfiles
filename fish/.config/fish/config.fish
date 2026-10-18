@@ -8,3 +8,6 @@ set -gx GTK_USE_PORTAL 1
 
 # zoxide
 zoxide init fish | source
+
+# Aliases
+source $__fish_config_dir/aliases.fish
