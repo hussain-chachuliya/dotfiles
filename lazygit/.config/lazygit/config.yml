@@ -28,7 +28,7 @@ gui:
     defaultFgColor: ["#c0caf5"]
     inactiveViewSelectedLineBgColor: ["#1f2335"]
 os:
-  editPreset: helix
+  editPreset: hx
 git:
   log:
     # topo-order makes lazygit unusably slow on huge repos like nixpkgs

@@ -17,7 +17,7 @@ prepend_previewers = [
 
 [opener]
 edit = [
-  { run = "helix %s", desc = "helix", for = "unix", block = true },
+  { run = "hx %s", desc = "helix", for = "unix", block = true },
 ]
 play = [
   { run = "gio open %s1", desc = "Play", for = "linux" },
