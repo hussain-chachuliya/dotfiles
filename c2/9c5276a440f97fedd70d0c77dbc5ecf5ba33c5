@@ -1,0 +1,31 @@
+yazi/.config/yazi/yazi.toml
+  s_1de1b4fe1cad90::t_d8db9a8fea2495 20
+desktop_apps/.local/share/applications/helix.desktop
+  s_1de1b4fe1cad90::t_4d94749e54fb47 3
+fish/.config/fish/config.fish
+  s_345c1d50dc2aa6::t_da203190276668 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c29c5276a440f97fedd70d0c77dbc5ecf5ba33c5",
+  "prompts": {},
+  "sessions": {
+    "s_1de1b4fe1cad90": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a15317-9362-755e-b1cf-fe906d979f9d",
+        "model": "gpt-5.4"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    },
+    "s_345c1d50dc2aa6": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a153b7-b460-74c2-93b4-9594ec7f5804",
+        "model": "cat-jam-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
