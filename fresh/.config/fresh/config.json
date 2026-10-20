@@ -1,0 +1,32 @@
+{
+  "plugins": {
+    "orchestrator": {
+      "settings": {
+        "autoOpenDock": "never"
+      }
+    }
+  },
+  "theme": "monokai.json",
+  "editor": {
+    "line_wrap": true
+  },
+  "lsp": {
+    "kotlin": [
+      {
+        "command": "kotlin-lsp",
+        "enabled": true,
+        "args": ["--stdio"],
+        "auto_start": false,
+        "root_markers": ["settings.gradle.kts", "settings.gradle", "pom.xml", "workspace.json"],
+        "process_limits": {
+          "max_memory_percent": 50,
+          "max_cpu_percent": 90,
+          "enabled": true
+        }
+      }
+    ]
+  },
+  "file_browser": {
+    "show_hidden": true
+  }
+}
