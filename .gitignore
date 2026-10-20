@@ -4,6 +4,6 @@ niri/.config/niri/noctalia.kdl
 qt5ct/.config/qt5ct/colors/noctalia.conf
 qt6ct/.config/qt6ct/colors/noctalia.conf
 helix/.config/helix/runtime/grammars/
-
+fresh/.config/fresh/types
 **/.DS_Store
 /.gitconfig_personal
