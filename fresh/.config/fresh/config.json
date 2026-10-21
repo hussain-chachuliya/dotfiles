@@ -6,9 +6,12 @@
       }
     }
   },
-  "theme": "monokai.json",
+  "theme": "builtin://dark",
   "editor": {
-    "line_wrap": true
+    "line_wrap": true,
+    "show_menu_bar": false,
+    "show_prompt_line": true,
+    "show_status_bar": true
   },
   "lsp": {
     "kotlin": [

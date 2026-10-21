@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Helix
-Exec=kitty -e hx %F
-Terminal=false
-Type=Application
-MimeType=text/plain;text/html;

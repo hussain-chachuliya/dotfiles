@@ -28,7 +28,8 @@ gui:
     defaultFgColor: ["#c0caf5"]
     inactiveViewSelectedLineBgColor: ["#1f2335"]
 os:
-  editPreset: hx
+  edit: "fresh {{filename}}"
+  editAtLine: "fresh {{filename}}:{{line}}"
 git:
   log:
     # topo-order makes lazygit unusably slow on huge repos like nixpkgs
