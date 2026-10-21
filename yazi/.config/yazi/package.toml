@@ -18,7 +18,12 @@ use = "yazi-rs/plugins:piper"
 rev = "9166202"
 hash = "d1e0499cae5f3aeb628c267616d4b682"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "9166202"
+hash = "b95f898e6dc60b52edbc415952e14395"
+
 [[flavor.deps]]
 use = "gosxrgxx/flexoki-dark"
-rev = "25d28ce"
-hash = "8e6dd7e42a127173e4535993d3e0e393"
+rev = "649e569"
+hash = "c890ec90f1f8275ffa5a2494414f3850"
