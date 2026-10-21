@@ -11,7 +11,12 @@
     "line_wrap": true,
     "show_menu_bar": false,
     "show_prompt_line": true,
-    "show_status_bar": true
+    "show_status_bar": true,
+    "whitespace_in_selection": false,
+    "cursor_style": "default",
+    "whitespace_show": false,
+    "rainbow_indentation": true,
+    "nerd_font_icons": true
   },
   "lsp": {
     "kotlin": [
