@@ -1,3 +1,3 @@
 # Fish aliases
 alias fr fresh
-alias yz yazi
+alias y yazi

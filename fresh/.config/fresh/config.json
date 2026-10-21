@@ -28,5 +28,8 @@
   },
   "file_browser": {
     "show_hidden": true
+  },
+  "file_explorer": {
+    "show_hidden": true
   }
 }

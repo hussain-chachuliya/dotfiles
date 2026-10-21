@@ -74,3 +74,7 @@ desc = "Jump to a file/directory via fzf"
 on = "<Enter>"
 run = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"

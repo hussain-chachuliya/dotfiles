@@ -313,7 +313,7 @@ binds {
         spawn "kitty" "yazi"
     }
     Mod+B repeat=false hotkey-overlay-title="Open Browser" {
-        spawn "brave-origin"
+        spawn "helium-browser"
     }
     Mod+O repeat=false hotkey-overlay-title="Open OpenCode" {
         spawn "opencode-desktop"
@@ -327,8 +327,8 @@ binds {
     XF86Calculator repeat=false hotkey-overlay-title="Open Calculator" {
         spawn "gnome-calculator"
     }
-    Ctrl+Alt+Delete repeat=false hotkey-overlay-title="Open Mission Center" {
-        spawn "missioncenter"
+    Ctrl+Alt+Delete repeat=false hotkey-overlay-title="Open Btop" {
+        spawn "kitty" "btop"
     }
     Mod+Space repeat=false hotkey-overlay-title="Open Launcher" {
         spawn-sh "~/.config/niri/scripts/noctalia-msg.sh panel-toggle launcher"
