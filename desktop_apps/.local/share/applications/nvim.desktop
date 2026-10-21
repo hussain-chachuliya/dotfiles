@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Neovim
-Exec=alacritty -e nvim %F
-Terminal=false
-Type=Application
-MimeType=text/plain;text/html;
