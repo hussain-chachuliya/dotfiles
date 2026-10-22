@@ -1,0 +1,17 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "7ad322d4410e20862b745a3fad62c3dcdd5b04d5",
+  "prompts": {},
+  "sessions": {
+    "s_fbf95d770ae38d": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a143aa-b380-70a4-aca6-cfbd509249f8",
+        "model": "cat-jam-free"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
