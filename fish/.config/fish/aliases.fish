@@ -1,4 +1,7 @@
 # Fish aliases
-alias fr 'fresh'
-alias y 'yazi'
-alias ls 'exa --icons'
+alias y yazi
+if type -q eza
+    alias ls 'eza --icons'
+else if type -q exa
+    alias ls 'exa --icons'
+end

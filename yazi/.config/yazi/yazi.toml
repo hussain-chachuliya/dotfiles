@@ -5,6 +5,7 @@
 linemode = "size_mtime"
 sort_by = "mtime"
 sort_reverse = true
+show_hidden = true
 
 [plugin]
 # boydaihungst/mediainfo — stacked preview: thumbnail on top, mediainfo below.
@@ -17,7 +18,7 @@ prepend_previewers = [
 
 [opener]
 edit = [
-  { run = "fresh %s", desc = "fresh text editor", for = "unix", block = true },
+  { run = "nvim %s", desc = "Open with nvim", for = "unix", block = true },
 ]
 play = [
   { run = "gio open %s1", desc = "Play", for = "linux" },
