@@ -8,3 +8,4 @@ fresh/.config/fresh/types
 **/.DS_Store
 /.gitconfig_personal
 .git/
+yazi/.config/yazi/plugins/
