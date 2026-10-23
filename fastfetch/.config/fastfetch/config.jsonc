@@ -3,8 +3,8 @@
     "logo": {
         "type": "kitty",
         "source": "~/.config/fastfetch/logo.png",
-        "width": 45,
-        "height": 25,
+        "width": 35,
+        "height": 20,
         "padding": {
             "right": 2
         }
@@ -79,26 +79,26 @@
             "temp": true,
             "format": "{name}{?temperature} ({temperature}){?}"
         },
-        {
-            "type": "memory",
-            "key": "Memory",
-            "format": "{used} / {total} ({percentage})"
-        },
-        {
-            "type": "swap",
-            "key": "Swap",
-            "format": "{used} / {total}"
-        },
-        {
-            "type": "disk",
-            "key": "Disk: {mountpoint}",
-            "format": "{size-used} / {size-total} ({size-percentage})"
-        },
-        {
-            "type": "battery",
-            "key": "Battery",
-            "temp": true
-        },
+//         {
+//             "type": "memory",
+//             "key": "Memory",
+//             "format": "{used} / {total} ({percentage})"
+//         },
+//         {
+//             "type": "swap",
+//             "key": "Swap",
+//             "format": "{used} / {total}"
+//         },
+//         {
+//             "type": "disk",
+//             "key": "Disk: {mountpoint}",
+//             "format": "{size-used} / {size-total} ({size-percentage})"
+//         },
+//         {
+//             "type": "battery",
+//             "key": "Battery",
+//             "temp": true
+//         },
         "poweradapter",
         {
             "type": "localip",
