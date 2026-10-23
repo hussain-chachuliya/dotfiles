@@ -7,3 +7,4 @@ helix/.config/helix/runtime/grammars/
 fresh/.config/fresh/types
 **/.DS_Store
 /.gitconfig_personal
+.git/
