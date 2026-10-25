@@ -315,14 +315,11 @@ binds {
     Mod+B repeat=false hotkey-overlay-title="Open Browser" {
         spawn "helium-browser"
     }
-    Mod+O repeat=false hotkey-overlay-title="Open OpenCode" {
-        spawn "opencode-desktop"
-    }
     Mod+N repeat=false hotkey-overlay-title="Open Notes" {
         spawn "obsidian"
     }
-    Mod+C repeat=false hotkey-overlay-title="Open Code-OSS" {
-        spawn "code"
+    Mod+T repeat=false hotkey-overlay-title="Open nvim text editor" {
+        spawn "kitty" "nvim"
     }
     XF86Calculator repeat=false hotkey-overlay-title="Open Calculator" {
         spawn "gnome-calculator"
