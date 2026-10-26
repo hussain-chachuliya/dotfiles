@@ -16,6 +16,9 @@ return {
       { "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy Find in Buffer" },
     },
     opts = {
+      defaults = {
+        path_display = { "truncate" },
+      },
       pickers = {
         find_files = {
           hidden = true,
