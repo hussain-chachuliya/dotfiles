@@ -8,8 +8,8 @@ set -gx EDITOR nvim
 set -gx GTK_USE_PORTAL 1
 set -gx XDG_CONFIG_HOME ~/.config
 
-# zoxide
 zoxide init fish | source
+oh-my-posh init fish --config "~/.config/oh-my-posh/themes/mytheme.json" | source
 
 # Aliases
 source $__fish_config_dir/aliases.fish

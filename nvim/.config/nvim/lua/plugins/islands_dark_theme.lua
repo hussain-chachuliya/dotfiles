@@ -1,7 +1,7 @@
 return {
   -- 1. Add and configure the plugin
   {
-    "Mofiqul/vscode.nvim",
+    "vcraescu/islands-dark.nvim",
     lazy = false, -- make sure it loads during startup so it's available
     priority = 1000, -- make sure to load this before all the other start plugins
     opts = {
@@ -16,7 +16,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vscode",
+      colorscheme = "islands-dark",
     },
   },
 }
