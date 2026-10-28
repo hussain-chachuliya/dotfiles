@@ -5,16 +5,16 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#E5E9F0",
-          "foreground": "#4C566A",
+          "background": "#1e1e2e",
+          "foreground": "#cdd6f4",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "style": "diamond",
           "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
         {
-          "background": "#81A1C1",
-          "foreground": "#2E3440",
+          "background": "#313244",
+          "foreground": "#89b4fa",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "style": "full"
@@ -25,14 +25,20 @@
           "type": "path"
         },
         {
-          "background": "#A3BE8C",
+          "background": "#313244",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#D08770{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#EBCB8B{{ end }}",
-            "{{ if gt .Ahead 0 }}#B48EAD{{ end }}",
-            "{{ if gt .Behind 0 }}#B48EAD{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#45475a{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#45475a{{ end }}",
+            "{{ if gt .Ahead 0 }}#45475a{{ end }}",
+            "{{ if gt .Behind 0 }}#45475a{{ end }}"
           ],
-          "foreground": "#2E3440",
+          "foreground": "#a6e3a1",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#fab387{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f9e2af{{ end }}",
+            "{{ if gt .Ahead 0 }}#cba6f7{{ end }}",
+            "{{ if gt .Behind 0 }}#cba6f7{{ end }}"
+          ],
           "powerline_symbol": "\ue0b0",
           "properties": {
             "fetch_stash_count": true,
@@ -44,9 +50,10 @@
           "type": "git"
         },
         {
-          "background": "#EBCB8B",
-          "background_templates": ["{{ if gt .Code 0 }}#f1184c{{ end }}"],
-          "foreground": "#2E3440",
+          "background": "#45475a",
+          "background_templates": ["{{ if gt .Code 0 }}#f38ba8{{ end }}"],
+          "foreground": "#f9e2af",
+          "foreground_templates": ["{{ if gt .Code 0 }}#1e1e2e{{ end }}"],
           "properties": {
             "always_enabled": true
           },
@@ -62,8 +69,8 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#B48EAD",
-          "foreground": "#2E3440",
+          "background": "#45475a",
+          "foreground": "#cba6f7",
           "type": "executiontime",
           "style": "powerline",
           "options": {
@@ -81,19 +88,19 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#ECEFF4",
+          "foreground": "#cdd6f4",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
         },
         {
-          "foreground": "#8FBCBB",
-          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+          "foreground": "#89dceb",
+          "foreground_templates": ["{{ if gt .Code 0 }}#f38ba8{{ end }}"],
           "properties": {
             "always_enabled": true
           },
           "style": "plain",
-          "template": "<#B48EAD>\u276f</><#A3BE8C>\u276f</><#EBCB8B>\u276f</> ",
+          "template": "<#cba6f7>\u276f</><#a6e3a1>\u276f</><#f9e2af>\u276f</> ",
           "type": "status"
         }
       ],
