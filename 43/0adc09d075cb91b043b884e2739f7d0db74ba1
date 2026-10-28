@@ -1,0 +1,20 @@
+oh-my-posh/.config/oh-my-posh/themes/mytheme.json
+  s_cc0464bf7562c4::t_06201459129aed 8-9,37-40,54,91,97-98,103
+  s_cc0464bf7562c4::t_96904c98772355 16-17,28,30-36,53,55-56,72-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "430adc09d075cb91b043b884e2739f7d0db74ba1",
+  "prompts": {},
+  "sessions": {
+    "s_cc0464bf7562c4": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a18309-0e0a-72d0-bbd7-68106702e23b",
+        "model": "Qwen3.8-27B"
+      },
+      "human_author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
