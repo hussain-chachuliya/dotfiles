@@ -17,7 +17,8 @@
           "foreground": "#89b4fa",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "style": "full"
+            "style": "agnoster_short",
+            "max_depth": 3
           },
 
           "style": "powerline",
