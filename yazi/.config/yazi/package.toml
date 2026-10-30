@@ -23,6 +23,11 @@ use = "yazi-rs/plugins:mount"
 rev = "e0bbd20"
 hash = "ba1a606728adb75b091b6eaf3fd60372"
 
+[[plugin.deps]]
+use = "pakhromov/localsend"
+rev = "a510f35"
+hash = "95f5b7019281905af996f21a0f65078e"
+
 [[flavor.deps]]
 use = "gosxrgxx/flexoki-dark"
 rev = "649e569"
