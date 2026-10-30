@@ -3,6 +3,7 @@
 require("zoxide"):setup({
 	update_db = true,
 })
+require("fs-usage"):setup()
 
 -- Show recursive directory size in the middle pane (async, non-blocking).
 -- Files use the built-in size; dirs are measured with fs.calc_size() in a

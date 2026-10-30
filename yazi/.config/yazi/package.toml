@@ -23,6 +23,11 @@ use = "yazi-rs/plugins:mount"
 rev = "896fa5a"
 hash = "ba1a606728adb75b091b6eaf3fd60372"
 
+[[plugin.deps]]
+use = "walldmtd/fs-usage"
+rev = "1b42083"
+hash = "28ac3655541321f006c25463419d719a"
+
 [[flavor.deps]]
 use = "gosxrgxx/flexoki-dark"
 rev = "649e569"
