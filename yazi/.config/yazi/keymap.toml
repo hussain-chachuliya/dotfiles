@@ -78,8 +78,3 @@ desc = "Enter the child directory, or open the file"
 [[mgr.prepend_keymap]]
 on = "M"
 run = "plugin mount"
-
-[[mgr.prepend_keymap]]
-on = "<C-l>"
-run = "plugin localsend"
-desc = "Send via LocalSend"
