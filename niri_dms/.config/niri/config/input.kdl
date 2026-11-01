@@ -1,0 +1,45 @@
+// Input configuration.
+// https://yalter.github.io/niri/Configuration:-Input
+input {
+    // Pin Mod to Super so the config behaves identically when niri runs nested
+    // in a window (where niri's Mod would otherwise become Alt).
+    mod-key "Super"
+    keyboard {
+        numlock
+ // Leave repeat-delay / repeat-rate at niri's defaults.
+
+        // Uncomment if you do not use localectl to drive the layout:
+        // xkb {
+        //     layout "us"
+        //     options "compose:ralt,ctrl:nocaps"
+        // }
+    }
+    touchpad {
+        disabled-on-external-mouse
+        dwt
+        tap
+        natural-scroll
+        accel-profile "flat"
+        accel-speed 0.7
+        scroll-method "two-finger"
+        middle-emulation
+    }
+    mouse {
+        accel-profile "flat"
+        accel-speed 1.0
+        middle-emulation
+    }
+    workspace-auto-back-and-forth
+
+    trackpoint
+}
+gestures {
+    dnd-edge-view-scroll {
+        trigger-width 40
+        max-speed 2000
+    }
+    dnd-edge-workspace-switch {
+        trigger-height 50
+        max-speed 2000
+    }
+}

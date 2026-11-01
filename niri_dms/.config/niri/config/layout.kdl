@@ -1,0 +1,54 @@
+// Look and feel.
+// https://yalter.github.io/niri/Configuration:-Layout
+//
+// -----------------------------------------------------------------------------
+layout {
+    gaps 5
+    center-focused-column "on-overflow"
+    default-column-width {
+        proportion 0.72
+    }
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+    struts {
+        top 0
+    }
+    background-color "transparent"
+}
+
+prefer-no-csd
+
+// niri loads a plain Xcursor theme from ~/.local/share/icons
+cursor {
+    xcursor-theme "Bibata-Modern-Ice"
+    xcursor-size 20
+    hide-when-typing true
+}
+
+// Blur. Requires niri >= 26.04; these keys are a parse error on older versions.
+blur {
+    passes 5
+    offset 100
+    noise 0
+    saturation 1.0
+}
+
+layer-rule { match namespace=r"^quickshell$"; place-within-backdrop true; }
+
+overview {
+    zoom 0.5
+    workspace-shadow {
+        off
+    }
+}
+
+window-rule {
+    match is-focused=true
+    background-effect {
+        blur true
+    }
+}
