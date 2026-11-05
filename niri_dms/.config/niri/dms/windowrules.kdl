@@ -4,11 +4,11 @@
 // @id=dms-floating-windows @name=DMS Floating Windows
 window-rule {
     match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
-    open-floating true
+    open-floating false
 }
 
 // @id=dms-window-opaque @name=DMS Window Opaque
 window-rule {
     match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
-    opacity 1.0
+    opacity 1.00
 }

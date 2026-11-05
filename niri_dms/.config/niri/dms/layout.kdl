@@ -5,13 +5,12 @@
 
 layout {
     border {
-        width 2
+        width 1
     }
 
     focus-ring {
-        width 2
+        width 1
     }
-    center-focused-column "on-overflow"
 }
 
 window-rule {
@@ -21,4 +20,4 @@ window-rule {
     draw-border-with-background false
 }
 
-// bar-xray off
+bar-xray off
