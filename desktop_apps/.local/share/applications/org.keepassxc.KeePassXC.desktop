@@ -2,9 +2,9 @@
 Name=KeePassXC
 GenericName=Password Manager
 Comment=Community-driven port of the Windows application “KeePass Password Safe”
-Exec=env QT_SCALE_FACTOR=0.8 keepassxc %f
-TryExec=keepassxc
-Icon=keepassxc
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=keepassxc --env=QT_QPA_PLATFORM=xcb --env=QT_SCALE_FACTOR=0.8 --env=QT_SCALE_FACTOR_ROUNDING_POLICY=PassThrough --file-forwarding org.keepassxc.KeePassXC @@ %f @@
+TryExec=/usr/bin/flatpak
+Icon=org.keepassxc.KeePassXC
 StartupWMClass=keepassxc
 StartupNotify=false
 Terminal=false
@@ -16,4 +16,3 @@ SingleMainWindow=true
 X-GNOME-SingleWindow=true
 Keywords=security;privacy;password-manager;yubikey;password;keepass;
 Keywords[de]=sicherheit;privatsphäre;passwort-manager;yubikey;passwort;keepass;
-Path=
