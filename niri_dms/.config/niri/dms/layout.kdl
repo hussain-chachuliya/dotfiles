@@ -20,4 +20,4 @@ window-rule {
     draw-border-with-background false
 }
 
-bar-xray off
+// bar-xray off

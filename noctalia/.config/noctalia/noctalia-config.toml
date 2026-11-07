@@ -26,12 +26,13 @@ end = [
 ]
 margin_edge = 0
 margin_ends = 0
-radius_bottom_left = 10
-radius_bottom_right = 10
+radius_bottom_left = 16
+radius_bottom_right = 16
 radius_top_left = 0
 radius_top_right = 0
 scale = 1.1000000000000001
 shadow = false
+contact_shadow = false
 start = ["session", "group:g1", "status", "summary", "active_window"]
 thickness = 35
 widget_spacing = 14
@@ -69,6 +70,7 @@ pinned = []
 position = "left"
 reserve_space = false
 show_dots = true
+shadow = false
 
 [hooks]
 battery_charging = "pw-play ~/.config/noctalia/sounds/charging_sound.mp3"
@@ -274,10 +276,11 @@ launcher_placement = "attached"
 open_near_click_control_center = true
 session_placement = "floating"
 session_position = "center"
+shadow = false
 
 [shell.screen_corners]
 enabled = true
-size = 12
+size = 16
 
 [shell.screenshot]
 copy_to_clipboard = true
@@ -337,7 +340,7 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
 [theme.templates]
-builtin_ids = ["alacritty", "gtk3", "gtk4", "kcolorscheme", "niri", "qt"]
+builtin_ids = ["alacritty", "gtk3", "gtk4", "kcolorscheme", "mango", "niri", "qt"]
 community_ids = ["opencode", "brave"]
 
 [wallpaper]
