@@ -1,7 +1,9 @@
 gtk-3.0/.config/gtk-3.0/noctalia.css
+gtk-3.0/.config/gtk-3.0/noctalia-extensions.css
 gtk-3.0/.config/gtk-3.0/dank-colors.css
 
 gtk-4.0/.config/gtk-4.0/noctalia.css
+gtk-4.0/.config/gtk-4.0/noctalia-extensions.css
 gtk-4.0/.config/gtk-4.0/dank-colors.css
 
 niri/.config/niri/noctalia.kdl
