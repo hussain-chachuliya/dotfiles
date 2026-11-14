@@ -1,0 +1,24 @@
+# Scrolling layout defaults.
+
+[layout]
+mode = "scrolling"
+gap = 2
+extent_presets = [0.5, 0.8, 1.0]
+
+[layout.scrolling]
+default_extent_fraction = 0.8
+center_focused = "never"
+center_underfull_strip = true
+
+[layout.master]
+default_width_fraction = 0.72
+new_becomes_master = true
+
+[overview]
+zoom = 0.35
+scroll_factor_horizontal = 1.0
+scroll_factor_vertical = 1.0
+background_blur = false
+workspace_wallpaper = true
+shortcuts = true
+shortcut_keys = "1234567890"

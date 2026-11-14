@@ -1,0 +1,146 @@
+# Keybinds. Defining this table replaces Umbriel built-in binds.
+
+[keybinds]
+
+# --- Window management ---------------------------------------------------------
+"Mod+Q" = { action = "window-close", repeat = false }
+"Mod+Shift+Q" = { action = "window-kill", repeat = false }
+"Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+Minus" = "window-modify-primary-extent -0.02"
+"Mod+Equal" = "window-modify-primary-extent +0.02"
+"Mod+R" = "window-cycle-primary-extent"
+"Mod+Shift+R" = "window-cycle-primary-extent-back"
+"Mod+W" = { action = "column-toggle-tabbed", repeat = false }
+"Mod+Ctrl+P" = { action = "window-toggle-pinned", repeat = false }
+"Mod+Shift+T" = { action = "window-toggle-floating", repeat = false }
+
+# --- Focus ---------------------------------------------------------------------
+"Mod+Left" = "window-focus-left"
+"Mod+Right" = "window-focus-right"
+"Mod+Up" = "window-focus-up"
+"Mod+Down" = "window-focus-down"
+"Mod+Tab" = { action = "window-focus-next", repeat = false }
+"Mod+Shift+Tab" = { action = "window-focus-previous", repeat = false }
+
+# --- Swap / move ---------------------------------------------------------------
+"Mod+Shift+Left" = "window-swap-left"
+"Mod+Shift+Right" = "window-swap-right"
+"Mod+Shift+Up" = "window-swap-up"
+"Mod+Shift+Down" = "window-swap-down"
+
+# --- Monitors ------------------------------------------------------------------
+"Mod+Alt+Left" = "output-focus-left"
+"Mod+Alt+Right" = "output-focus-right"
+"Mod+Ctrl+Left" = "window-move-to-output-left"
+"Mod+Ctrl+Right" = "window-move-to-output-right"
+
+# --- Workspaces ----------------------------------------------------------------
+"Mod+1" = "workspace-switch 1"
+"Mod+2" = "workspace-switch 2"
+"Mod+3" = "workspace-switch 3"
+"Mod+4" = "workspace-switch 4"
+"Mod+5" = "workspace-switch 5"
+"Mod+6" = "workspace-switch 6"
+"Mod+7" = "workspace-switch 7"
+"Mod+8" = "workspace-switch 8"
+"Mod+9" = "workspace-switch 9"
+
+"Mod+Shift+1" = "window-move-to-workspace 1"
+"Mod+Shift+2" = "window-move-to-workspace 2"
+"Mod+Shift+3" = "window-move-to-workspace 3"
+"Mod+Shift+4" = "window-move-to-workspace 4"
+"Mod+Shift+5" = "window-move-to-workspace 5"
+"Mod+Shift+6" = "window-move-to-workspace 6"
+"Mod+Shift+7" = "window-move-to-workspace 7"
+"Mod+Shift+8" = "window-move-to-workspace 8"
+"Mod+Shift+9" = "window-move-to-workspace 9"
+
+# --- Scratchpad ----------------------------------------------------------------
+"Mod+S" = { action = "scratchpad-toggle", repeat = false }
+"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
+"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
+
+# --- Overview & launchers ------------------------------------------------------
+"Alt+Tab" = { action = "overview-toggle", repeat = false }
+"Mod+Space" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle launcher", repeat = false }
+"Mod+Shift+Comma" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle launcher /emo", repeat = false }
+
+# --- Applications --------------------------------------------------------------
+"Mod+Return" = { action = "spawn kitty", repeat = false }
+"Mod+E" = { action = "spawn kitty yazi", repeat = false }
+"Mod+B" = { action = "spawn helium-browser", repeat = false }
+"Mod+O" = { action = "spawn obsidian", repeat = false }
+"Mod+T" = { action = "spawn kitty nvim", repeat = false }
+"Mod+L" = { action = "spawn localsend", repeat = false }
+"Ctrl+Alt+Delete" = { action = "spawn kitty btop", repeat = false }
+
+# --- Layout & session ----------------------------------------------------------
+# available options ==> scrolling, dwindle, master, stacking
+"Mod+N" = { action = "workspace-set-layout toggle scrolling master stacking", repeat = false }
+"Mod+Z" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh settings-toggle", repeat = false }
+"Mod+Shift+Z" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle control-center", repeat = false }
+"Mod+Shift+L" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh session lock", repeat = false }
+#"Mod+Shift+E" = { action = "session-quit", repeat = false }
+#"Mod+Escape" = { action = "session-quit", repeat = false }
+"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+
+# --- DPMS / outputs ------------------------------------------------------------
+"Mod+F11" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh dpms-on", repeat = false }
+"Mod+F12" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh dpms-off", repeat = false }
+"Mod+Shift+F11" = { action = "spawn umbriel msg output-enable eDP-1", repeat = false }
+"Mod+Shift+F12" = { action = "spawn umbriel msg output-disable eDP-1", repeat = false }
+
+# --- Bar / dock / toggles ------------------------------------------------------
+"Mod+Ctrl+B" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh bar-toggle", repeat = false }
+"Mod+Alt+B" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh bar-auto-hide-set toggle", repeat = false }
+"Mod+Shift+D" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh dock-reload", repeat = false }
+"Mod+Ctrl+D" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh dock-toggle", repeat = false }
+"Mod+Alt+D" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh dock-auto-hide-set toggle", repeat = false }
+
+"Mod+Shift+C" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh caffeine-toggle", repeat = false }
+"Mod+Ctrl+U" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh nightlight-toggle", repeat = false }
+"Mod+Ctrl+O" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh osd-toggle", repeat = false }
+"Mod+Shift+B" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh bluetooth-toggle", repeat = false }
+"Mod+Shift+P" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle session", repeat = false }
+"Mod+Shift+F" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh wifi-toggle", repeat = false }
+"Mod+Ctrl+X" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh network-toggle", repeat = false }
+"Mod+Shift+A" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle control-center notifications", repeat = false }
+"Mod+Ctrl+N" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh notification-dnd-toggle", repeat = false }
+"Mod+Shift+N" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh notification-clear-active", repeat = false }
+
+# --- Audio & brightness --------------------------------------------------------
+"XF86AudioRaiseVolume" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh volume-mute", allow_when_locked = true, repeat = false }
+"XF86AudioMicMute" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh mic-mute", allow_when_locked = true, repeat = false }
+"XF86AudioNext" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh media previous", allow_when_locked = true }
+"XF86AudioPlay" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh media toggle", allow_when_locked = true, repeat = false }
+"XF86MonBrightnessUp" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh brightness-down", allow_when_locked = true }
+
+# --- Screenshots & utilities ---------------------------------------------------
+"Print" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh screenshot-region", repeat = false }
+"Mod+Print" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh screenshot-fullscreen", repeat = false }
+"Alt+Print" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh screenshot-annotate", repeat = false }
+# Mango also had raw grim binds on Ctrl+Shift+1..3, but grim/slurp are not installed.
+# Mod+P (pick colour) was dropped: the Mango script used `niri msg pick-color`
+# and no standalone picker (hyprpicker) is installed.
+
+"Mod+Shift+W" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle wallpaper", repeat = false }
+"Mod+Ctrl+W" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh wallpaper-random", repeat = false }
+"Mod+Shift+M" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh theme-mode-toggle", repeat = false }
+
+# --- Clipboard & transliteration ----------------------------------------------
+"Mod+V" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle clipboard", repeat = false }
+"Mod+U" = { action = "spawn ~/.local/bin/urdu-translit --clip", repeat = false }
+"Mod+Shift+U" = { action = "spawn ~/.local/bin/urdu-translit --clip --word --pick 2", repeat = false }
+
+# --- Pointer -------------------------------------------------------------------
+# Umbriel's built-ins replace the Mango mousebinds:
+#   Mod+left-drag   = move window       (moveresize curmove)
+#   Mod+right-drag  = resize window     (moveresize curresize)
+#   Mod+right double-click = maximize   (btn_middle togglemaximizescreen)
+"Mod+WheelUp" = "window-focus-left"
+"Mod+WheelDown" = "window-focus-right"

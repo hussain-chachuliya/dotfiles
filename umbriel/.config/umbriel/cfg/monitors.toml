@@ -1,0 +1,9 @@
+# Outputs. Mango used 2560x1440, but the panel is natively 2560x1600 (16:10).
+# Using the native mode avoids letterboxing / wasted top and bottom rows.
+
+[output.eDP-1]
+mode = "2560x1600@240"
+position = [0, 0]
+scale = 1.5
+vrr = "fullscreen"
+tearing = true

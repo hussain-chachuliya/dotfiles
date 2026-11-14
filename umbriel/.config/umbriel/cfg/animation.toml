@@ -1,0 +1,46 @@
+# Window, workspace, and focus transitions.
+
+[animation]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+[animation.windows_in]
+enabled = true
+style = "zoom"
+scale = 0.1
+duration_ms = 100
+curve = "0.87,0,0.13,1"
+
+[animation.windows_out]
+enabled = true
+style = "zoom"
+scale = 0.5
+duration_ms = 400
+curve = "0.87,0,0.13,1"
+
+[animation.windows_move]
+enabled = true
+duration_ms = 300
+curve = "0.46,1.0,0.29,1"
+
+[animation.workspaces]
+enabled = true
+style = "slide"
+duration_ms = 300
+curve = "0.46,1.0,0.29,1"
+
+[animation.windows_opacity]
+enabled = false
+
+[animation.border]
+enabled = false
+
+[animation.layers]
+enabled = false
+
+[animation.dim_unfocused]
+enabled = true
+dim = 0.435
+duration_ms = 100
+curve = "easeout"
