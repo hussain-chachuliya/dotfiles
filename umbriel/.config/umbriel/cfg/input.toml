@@ -1,0 +1,11 @@
+# Input devices and cursor.
+
+[input]
+mod_right_double_click = "maximize"
+
+[input.touchpad]
+natural_scroll = true
+
+[input.cursor]
+theme = "Bibata-Modern-Ice"
+size = 20

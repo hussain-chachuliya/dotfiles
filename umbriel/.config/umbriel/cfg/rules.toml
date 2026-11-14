@@ -1,0 +1,74 @@
+# Window rules.
+
+# Mango blurs every window.
+[[window_rule]]
+blur = true
+blur_optimized = true
+
+# Mango opacity
+[[window_rule]]
+match.is_focused = true
+opacity = 0.95
+
+# Mango shadow_only_floating = 1
+[[window_rule]]
+match.is_floating = false
+shadow = false
+
+# Mango scroller_default_proportion_single = 2.0 (a lone column fills the view)
+[[window_rule]]
+match.is_alone = true
+default_scrolling_extent = 1.0
+
+# Noctalia settings window
+[[window_rule]]
+match.app_id = "^dev[.]noctalia[.]Noctalia$"
+default_floating = false
+# default_floating_size_px = { width = 1020, height = 900 }
+
+# Umbriel's own screen-share picker
+[[window_rule]]
+match.app_id = "^dev[.]noctalia[.]UmbrielSharePicker$"
+default_floating = true
+default_floating_size_px = { width = 800, height = 600 }
+
+# Picture-in-Picture
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+# Noctalia notification toasts
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+# Mango: float Steam itself, but tile its main window
+[[window_rule]]
+match.app_id = "^[Ss]team$"
+default_floating = true
+
+[[window_rule]]
+match.title = "^Steam$"
+default_floating = false
+
+[[window_rule]]
+match.app_id = "^[Ss]team$"
+match.title = "^Steam Settings$"
+default_floating = true
+
+# Mango: screen-sharing indicator in the lower right, undecorated
+[[window_rule]]
+match.title = "^.*is sharing your screen[.]$"
+default_floating = true
+default_position = { x = 400, y = 450, anchor = "top_left" }
+border_width = 0
+shadow = false
+
+# Mango: allow tearing for games (output also opts in)
+[[window_rule]]
+match.content_type = "game"
+tearing = true

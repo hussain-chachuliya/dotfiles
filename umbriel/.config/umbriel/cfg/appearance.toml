@@ -1,0 +1,23 @@
+# Look and feel: borders, radius, blur, shadows.
+
+[appearance]
+prefer_no_csd = true
+border_width = 2
+corner_radius = 16
+opaque_fullscreen = true
+
+[appearance.blur]
+enabled = true
+optimized = true
+passes = 5
+radius = 72
+noise = 0.0
+brightness = 0.9
+contrast = 0.9
+saturation = 1.2
+
+[appearance.shadow]
+enabled = true
+softness = 12
+offset_x = 2
+offset_y = 2

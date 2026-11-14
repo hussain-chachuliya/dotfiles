@@ -347,7 +347,7 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
 [theme.templates]
-builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "mango", "qt"]
+builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "mango", "qt", "umbriel"]
 community_ids = ["opencode", "brave"]
 
 [wallpaper]

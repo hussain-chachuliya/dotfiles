@@ -1,0 +1,4 @@
+# Autostart programs.
+
+[general]
+autostart = ["noctalia"]
