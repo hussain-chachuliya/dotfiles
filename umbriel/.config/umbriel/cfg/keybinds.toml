@@ -14,6 +14,7 @@
 "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
 "Mod+Ctrl+P" = { action = "window-toggle-pinned", repeat = false }
 "Mod+Shift+T" = { action = "window-toggle-floating", repeat = false }
+"Mod+Alt+Space" = { action = "cheatsheet-toggle", repeat = false }
 
 # --- Focus ---------------------------------------------------------------------
 "Mod+Left" = "window-focus-left"
@@ -125,8 +126,6 @@
 "Mod+Print" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh screenshot-fullscreen", repeat = false }
 "Alt+Print" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh screenshot-annotate", repeat = false }
 # Mango also had raw grim binds on Ctrl+Shift+1..3, but grim/slurp are not installed.
-# Mod+P (pick colour) was dropped: the Mango script used `niri msg pick-color`
-# and no standalone picker (hyprpicker) is installed.
 
 "Mod+Shift+W" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh panel-toggle wallpaper", repeat = false }
 "Mod+Ctrl+W" = { action = "spawn ~/.config/umbriel/scripts/noctalia-msg.sh wallpaper-random", repeat = false }

@@ -9,3 +9,5 @@ natural_scroll = true
 [input.cursor]
 theme = "Bibata-Modern-Ice"
 size = 20
+hardware_cursor = false
+hide_timeout_ms = 0
