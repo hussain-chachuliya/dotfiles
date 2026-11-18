@@ -1,0 +1,18 @@
+nvim/.config/nvim/lazy-lock.json
+  h_187593d659e4d7 3,11,13-14,27-28
+nvim/.config/nvim/lua/plugins/telescope.lua
+  h_187593d659e4d7 12-25
+nvim/.config/nvim/lua/plugins/todo-comments.lua
+  h_187593d659e4d7 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a3eda9edca2c8ba733f916ff08fe4d0831ac8f23",
+  "prompts": {},
+  "humans": {
+    "h_187593d659e4d7": {
+      "author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
