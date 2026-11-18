@@ -9,8 +9,20 @@ return {
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     },
     keys = {
-      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
+      {
+        "<leader>ff",
+        function()
+          require("telescope.builtin").find_files({ cwd = LazyVim.root() })
+        end,
+        desc = "Find Files (Root Dir)",
+      },
+      {
+        "<leader>fg",
+        function()
+          require("telescope.builtin").live_grep({ cwd = LazyVim.root() })
+        end,
+        desc = "Live Grep (Root Dir)",
+      },
       { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
       { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
       { "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy Find in Buffer" },
