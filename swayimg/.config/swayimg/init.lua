@@ -41,9 +41,9 @@ swayimg.viewer.on_key("e", function()
 
 	local folder = image.path:match("^(.*)/") or "."
 	os.execute(
-		"noctalia msg --directory "
+		"noctalia msg annotate --directory "
 			.. shell_quote(folder)
-			.. " annotate "
+			.. " "
 			.. shell_quote(image.path)
 			.. " >/dev/null 2>&1 &"
 	)
