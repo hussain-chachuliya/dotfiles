@@ -1,0 +1,14 @@
+fish/.config/fish/config.fish
+  h_187593d659e4d7 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b22495b925edb737f029f28e5cbd40cfea8a774b",
+  "prompts": {},
+  "humans": {
+    "h_187593d659e4d7": {
+      "author": "hussain-chachuliya <hussain.patience@gmail.com>"
+    }
+  }
+}
