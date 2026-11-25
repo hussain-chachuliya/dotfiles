@@ -10,6 +10,7 @@ set -gx GTK_USE_PORTAL 1
 set -gx XDG_CONFIG_HOME ~/.config
 
 zoxide init fish | source
+fzf --fish | source
 oh-my-posh init fish --config "~/.config/oh-my-posh/themes/mytheme.json" | source
 
 # Aliases
