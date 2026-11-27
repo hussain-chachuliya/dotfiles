@@ -30,7 +30,7 @@ open = [
   { run = "open %s1", desc = "Open", for = "macos" },
 ]
 reveal = [
-  { run = "nautilus --new-window %d1", desc = "Reveal", for = "linux", orphan = true },
+  { run = "luciole -- %d1", desc = "Reveal", for = "linux", orphan = true },
   { run = "open -R %s1", desc = "Reveal", for = "macos", orphan = true },
   { run = "clear; exiftool %s1; echo 'Press enter to exit'; read _", desc = "Show EXIF", for = "unix", block = true },
 ]
